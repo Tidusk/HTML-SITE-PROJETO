@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1 style="text-align: center;"><b>Formulário de Inscrição em Evento</b></h1>
+    <fieldset style="width: 60%; margin: 0 auto;">
+        <table>
+            <form>
+                <tr>
+                    <td style="text-align: center;">Nome Completo:</td><td><input type="nome" name="nome" required></td>
+                </tr>
+                <tr>    
+                    <td style="text-align: center;">E-mail:</td><td><input type="email" name="email" required placeholder="ex: myname@example.com"></td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">Sexo</td>
+                        <td>
+                            <input type="radio" id="Sexo" name="Sexo" value="Masculino">
+                            <label for="tecnologia1">Masculino</label>
+                            <input type="radio" id="Sexo" name="Sexo" value="Feminino">
+                            <label for="tecnologia2">Feminino</label>
+                        </td>
+                </tr>
+                <tr>    
+                    <td style="text-align: center;">Cargo:</td><td><input type="cargo" name="cargo" required placeholder="ex: myname@example.com"></td>
+                </tr>
+                <tr>    
+                    <td style="text-align: center;">Nascimento:</td><td><input type="nascimento" name="nascimento" required placeholder="ex: myname@example.com"></td>
+                </tr>
+                <tr>    
+                    <td style="text-align: center;">Telefone:</td><td><input type="telefone" name="telefone" required placeholder="ex: myname@example.com"></td>
+                </tr>
+            </form>
+        </table>
+    </fieldset>
+    <h2 style="text-align: center;">informações da Instituição</h2>
+    <p style="text-align: center;">Prencha os campos abaixo com as informações da empresa em que trabalha</p>
+    <fieldset style="width: 60%; margin: 0 auto;">
+        <table>
+            <form>
+                <tr>
+                    <td style="text-align: center;">Empresa:</td><td><input type="nome" name="nome" required></td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">Endereço Completo:</td><td><input type="nome" name="nome" required></td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">Cidade:</td><td><input type="nome" name="nome" required></td>
+                </tr>
+                <tr>
+                    <td>
+                        <select id="UF" name="UF">
+                            <option value="">Selecione</option>
+                            <option value="AC">Acre</option>
+                            <option value="AL">Alagoas</option>
+                            <option value="AP">Amapá</option>
+                            <option value="AM">Amazonas</option>
+                            <option value="BA">Bahia</option>
+                            <option value="CE">Ceará</option>
+                            <option value="DF">Distrito Federal</option>
+                            <option value="ES">Espirito Santo</option>
+                            <option value="GO">Goiás</option>
+                            <option value="MA">Maranhão</option>
+                            <option value="MS">Mato Grosso do Sul</option>
+                            <option value="MT">Mato Grosso</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="PA">Pará</option>
+                            <option value="PB">Paraíba</option>
+                            <option value="PR">Paraná</option>
+                            <option value="PE">Pernambuco</option>
+                            <option value="PI">Piauí</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="RN">Rio Grande do Norte</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                            <option value="RO">Rondônia</option>
+                            <option value="RR">Roraima</option>
+                            <option value="SC">Santa Catarina</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="SE">Sergipe</option>
+                            <option value="TO">Tocantins</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">Quant. Funcionários:</td><td><input type="nome" name="nome" required></td>
+                </tr>
+
+            </form>
+        </table>
+    </fieldset>
+</body>
+</html>
