@@ -1,31 +1,13 @@
 .stretch {
 	align-items: stretch;
 }
-.flex-start{
-	align-content: flex-start;
-}
-
-.flex-end {
-	align-content: flex-end;
-}
-
-.center {
-	align-content: center;
-}
-
-.space-between {
-	align-content: space-between;
-}
-
-.space-around {
-	align-content: space-around;
-}
 
 /* Flex Container */
 .container {
 	max-width: 420px;
 	margin: 0 auto;
 	display: flex;
+	flex-direction: column;
 	border: 1px solid #ccc;
 /* Flex Item */
 }
@@ -36,7 +18,50 @@
 	flex: 1;
 	margin: 5px;
 	padding: 0 10px;
-	background: tomato;
+	background: #aeaeae;
+	text-align: center;
+	font-size: 2.5em;
+}
+.item2 {
+	flex: 1;
+	margin: 5px;
+	padding: 0 10px;
+	background: #aeaeae;
+	text-align: center;
+	font-size: 1.5em;
+}
+.item3 {
+	flex: 1;
+	margin: 5px;
+	padding: 0 10px;
+	background: #aeaeae;
+	text-align: center;
+	font-size: 7em;
+}
+.item4 {
+	width: 20%;
+	flex: 1;
+	margin: 5px;
+	padding: 0 10px;
+	background: #aeaeae;
+	text-align: center;
+	font-size: 1.5em;
+}
+.item5 {
+	width: 80%;
+	justify-content: flex-end;
+	flex: 1;
+	margin: 5px;
+	padding: 0 10px;
+	background: #aeaeae;
+	text-align: center;
+	font-size: 1.5em;
+}
+.item6 {
+	flex: 1;
+	margin: 5px;
+	padding: 0 10px;
+	background: #aeaeae;
 	text-align: center;
 	font-size: 1.5em;
 }
