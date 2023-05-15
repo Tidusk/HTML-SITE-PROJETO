@@ -4,11 +4,12 @@
 
 /* Flex Container */
 .container {
-	max-width: 420px;
+	max-width: 400px;
 	margin: 0 auto;
 	display: flex;
-	flex-direction: column;
 	border: 1px solid #ccc;
+	
+}
 /* Flex Item */
 }
 .column {
@@ -16,11 +17,13 @@
 }
 .item {
 	flex: 1;
+	height: 30px;
 	margin: 5px;
 	padding: 0 10px;
 	background: #aeaeae;
 	text-align: center;
-	font-size: 2.5em;
+	font-size: 1.5em;
+	flex-basis: 100%;
 }
 .item2 {
 	flex: 1;
@@ -29,6 +32,8 @@
 	background: #aeaeae;
 	text-align: center;
 	font-size: 1.5em;
+	flex-basis: 100%;
+
 }
 .item3 {
 	flex: 1;
@@ -36,16 +41,21 @@
 	padding: 0 10px;
 	background: #aeaeae;
 	text-align: center;
-	font-size: 7em;
+	font-size: 5em;
+	flex-basis: 100%;
+	
+
 }
 .item4 {
-	width: 20%;
+	width: 30%;
 	flex: 1;
 	margin: 5px;
 	padding: 0 10px;
 	background: #aeaeae;
-	text-align: center;
-	font-size: 1.5em;
+	font-size: 12em;
+	display: flex;
+	flex-basis: 20%;
+
 }
 .item5 {
 	width: 80%;
@@ -55,7 +65,9 @@
 	padding: 0 10px;
 	background: #aeaeae;
 	text-align: center;
-	font-size: 1.5em;
+	font-size: 12em;
+	flex-basis: 60%;
+
 }
 .item6 {
 	flex: 1;
@@ -64,6 +76,8 @@
 	background: #aeaeae;
 	text-align: center;
 	font-size: 1.5em;
+	flex-basis: 100%;
+
 }
 
 h1 {
@@ -76,4 +90,21 @@ h1 {
 body {
 	font-family: monospace;
 	color: #333;
+}
+
+span {
+	font-size: 20%;
+	text-align: center;
+}
+
+.flex {
+	display: flex;
+}
+
+.flex-wrap {
+	flex-wrap: wrap;
+}
+
+.basis-numero-container {
+	flex-wrap: wrap;
 }
