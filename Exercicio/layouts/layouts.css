@@ -9,8 +9,6 @@
 	display: flex;
 	border: 1px solid #ccc;
 	justify-content: space-between;
-
-	
 }
 /* Flex Item */
 .column {
