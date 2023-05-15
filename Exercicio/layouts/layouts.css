@@ -108,3 +108,15 @@ span {
 .basis-numero-container {
 	flex-wrap: wrap;
 }
+
+.item7 {
+	width: 30%;
+	flex: 1;
+	margin: 5px;
+	padding: 0 10px;
+	background: #aeaeae;
+	font-size: 12em;
+	display: flex;
+	flex-basis: 20%;
+
+}
