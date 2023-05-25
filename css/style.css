@@ -3,11 +3,13 @@
     padding: 0;
     box-sizing: border-box;
 }
+h1{
+    max-width: 100%;
+}
 
 body{
-    background-image: url(../assets/gifs-do-sonic-correndo-0.gif);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: rgb(103, 169, 219);
+
 }
 
 .center{
@@ -72,3 +74,18 @@ section.sobre{
     height: 1vh; 
     font-size: 70px;
 }
+
+img2 {
+    max-width: 100%;
+    height: auto;
+  }
+
+centro {
+    max-width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+  
