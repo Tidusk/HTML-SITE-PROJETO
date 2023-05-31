@@ -11,10 +11,10 @@
     <p id="result"></p>
     <fieldset>
         <label for="num1">Valor 1:</label>
-        <input type="number" id="num1" step="0.1" min="0"><br>    
+        <input type="number" id="num1" step="0.1" min="0" onmouseover="verNum()"><br>
         <label for="num1">Valor 2:</label>
         <input type="number" id="num2" step="0.1" min="0"><br>
-        <input type="button" id="botao" value="OK">
+        <input type="button" id="bt1" value="OK">
     </fieldset>
     <br><br>
     <fieldset>
@@ -24,7 +24,38 @@
         <label for="vlr2">Fim:</label>
         <input id="vlr2" type="number" step="1" min="0">
         <span id="verif"></span><br>
-        <button id="btGerar">Gerar  </button>
+        <button id="btGerar">Gerar</button>
     </fieldset>
+    <script>
+        let titulo=document.getElementById('titulo');
+        //alert(titulo.innerHTML);
+        titulo.style='border: 1px dotted purple; font-size: 30pt;';
+        titulo.style.backgroundColor='green';
+
+        let txtNum1 = document.querySelector('#num1');
+        let txtNum2 = document.querySelector('#num2');
+        let botao = document.querySelector("#bt1");
+        /*
+
+
+        function verNum(){
+            result.innerHTML = "Informe um valor maior que 0!"
+        };
+        txtNum1.onmouseout=function(){
+            result.innerHTML="";
+        };
+        */
+        botao.onclick=function(){
+            if(parseFloat(txtNum1.value) > parseFloat(txtNum2.value)){
+                result.innerHTML='O maior valor é o primeiro';
+            }else if(parseFloat(txtNum2.value)>parseFloat(txtNum1.value)){
+                result.innerHTML='O maior valor é o segundo';
+            }else{
+                result.innerHTML='Os valores são iguais';
+            }
+        };
+
+        // utilizando somente id para selecionar os elementos
+    </script>
 </body>
 </html>
