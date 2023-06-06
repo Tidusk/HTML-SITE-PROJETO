@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio</title>
+</head>
+
+<body>
+    <script>
+
+        function calcularMedia() {
+            function calcularMedia() {
+                // Obter os valores das notas
+                var nota1 = parseFloat(document.getElementById('nota1').value);
+                var nota2 = parseFloat(document.getElementById('nota2').value);
+                var nota3 = parseFloat(document.getElementById('nota3').value);
+
+                // Calcular a média
+                var media = (nota1 + nota2 + nota3) / 3;
+
+                // Verificar a aprovação e exibir o resultado em uma caixa de diálogo de alerta
+                if (media >= 6) {
+                    alert("Média: " + media.toFixed(2) + "\nAprovado");
+                } else {
+                    alert("Média: " + media.toFixed(2) + "\nReprovado");
+                }
+            }
+    </script>
+</body>
+
+</html>
