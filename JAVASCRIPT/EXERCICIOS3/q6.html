@@ -10,6 +10,26 @@
 
 <body>
     <script>
+        var soma = 0;
+        var quantidade = 0;
+
+        while (true) {
+            var valor = parseInt(prompt("Digite um valor inteiro positivo (ou um valor negativo para sair):"));
+
+            if (valor < 0) {
+                break;
+            }
+
+            soma += valor;
+            quantidade++;
+        }
+
+        if (quantidade > 0) {
+            var media = soma / quantidade;
+            alert("A média aritmética dos valores digitados é: " + media.toFixed(2));
+        } else {
+            alert("Nenhum valor válido foi digitado.");
+        }
 
     </script>
 </body>

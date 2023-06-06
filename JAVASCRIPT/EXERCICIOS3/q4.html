@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt">
 
 <head>
     <meta charset="UTF-8">
@@ -10,24 +10,21 @@
 
 <body>
     <script>
+        var nota1 = parseFloat(prompt("Digite a nota 1:"));
+        var nota2 = parseFloat(prompt("Digite a nota 2:"));
+        var nota3 = parseFloat(prompt("Digite a nota 3:"));
 
-        function calcularMedia() {
-            function calcularMedia() {
-                // Obter os valores das notas
-                var nota1 = parseFloat(document.getElementById('nota1').value);
-                var nota2 = parseFloat(document.getElementById('nota2').value);
-                var nota3 = parseFloat(document.getElementById('nota3').value);
+        var media = (nota1 + nota2 + nota3) / 3;
 
-                // Calcular a média
-                var media = (nota1 + nota2 + nota3) / 3;
+        var mensagem = "Média: " + media.toFixed(2);
 
-                // Verificar a aprovação e exibir o resultado em uma caixa de diálogo de alerta
-                if (media >= 6) {
-                    alert("Média: " + media.toFixed(2) + "\nAprovado");
-                } else {
-                    alert("Média: " + media.toFixed(2) + "\nReprovado");
-                }
-            }
+        if (media >= 6) {
+            mensagem += "\nAprovado";
+        } else {
+            mensagem += "\nReprovado";
+        }
+
+        alert(mensagem);
     </script>
 </body>
 

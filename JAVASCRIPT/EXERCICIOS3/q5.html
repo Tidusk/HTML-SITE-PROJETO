@@ -10,6 +10,18 @@
 
 <body>
     <script>
+        var numero = parseInt(prompt("Digite um número maior que 0:"));
+        var soma = 0;
+
+        if (numero > 0) {
+            for (var i = 1; i < numero; i++) {
+                soma += i;
+            }
+
+            alert("A soma de todos os números menores que " + numero + " é: " + soma);
+        } else {
+            alert("O número digitado não é válido. Por favor, digite um número maior que 0.");
+        }
 
     </script>
 </body>

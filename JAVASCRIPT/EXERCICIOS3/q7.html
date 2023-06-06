@@ -10,6 +10,15 @@
 
 <body>
     <script>
+        var base = parseInt(prompt("Digite a base:"));
+        var potencia = parseInt(prompt("Digite a potência:"));
+        var resultado = 1;
+
+        for (var i = 0; i < potencia; i++) {
+            resultado *= base;
+        }
+
+        alert(base + " elevado a " + potencia + " é igual a " + resultado);
 
     </script>
 </body>
