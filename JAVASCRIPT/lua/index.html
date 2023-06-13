@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Peso</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: gray
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="number"] {
+            width: 100px;
+        }
+
+        button {
+            margin-top: 10px;
+        }
+
+        #result {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+
+        .centro {
+            font-size: 50px;
+            margin: 100px 1%;
+            width: auto;
+            height: auto;
+
+        }
+
+        .centro2 {
+            font-size: 50px;
+
+            margin: 1px 1%;
+        }
+    </style>
+</head>
+
+<body>
+    <table border="1" class="centro2">
+        <tr>
+            <th>#</th>
+            <th>Gravidade relativa</th>
+            <th>Planeta</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>0.37</td>
+            <td>Mercúrio</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>0,88</td>
+            <td>Vênus</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>0,38</td>
+            <td>Marte</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>2,64</td>
+            <td>Júpiter</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>1,15</td>
+            <td>Saturno</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>1,17</td>
+            <td>Urano</td>
+        </tr>
+    </table>
+    <div class="centro" borde="1">
+        <h1>Calculadora de Peso Planetário</h1>
+
+        <label for="weight">Peso na Terra (em kg):</label>
+        <input type="number" id="weight">
+
+
+
+        <label for="planet">Planeta:</label>
+        <select id="planet">
+            <option value="0.37">Mercúrio</option>
+            <option value="0.88">Vênus</option>
+            <option value="0.38">Marte</option>
+            <option value="2.64">Júpiter</option>
+            <option value="1.15">Saturno</option>
+            <option value="1.17">Urano</option>
+        </select>
+
+        <button onclick="calculateWeight()">Calcular Peso</button>
+
+        <div id="result"></div>
+    </div>
+    <script>
+        function calculateWeight() {
+            var weight = document.getElementById("weight").value;
+            var planet = document.getElementById("planet").value;
+
+            var calculatedWeight = weight * planet;
+
+            document.getElementById("result").innerHTML = "Seu peso neste planeta é: " + calculatedWeight.toFixed(2) + " kg";
+        }
+    </script>
+</body>
+
+</html>
