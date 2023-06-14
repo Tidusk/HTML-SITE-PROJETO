@@ -10,7 +10,8 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background: gray
+            background: rgb(223, 223, 223)
+            color: #ffb300
         }
 
         label {
@@ -43,6 +44,14 @@
             font-size: 50px;
 
             margin: 1px 1%;
+        }
+        .topw{
+            font-size: 25px;
+            height: 50px;
+        }
+        .botao{
+            height: 50px;
+            width: 150px;
         }
     </style>
 </head>
@@ -90,7 +99,7 @@
 
         <form onsubmit="event.preventDefault(); calculateWeight();">
             <label for="weight">Peso na Terra (em kg):</label>
-            <input type="number" id="weight" required>
+            <input class="topw" type="number" id="weight" required>
 
             <label for="planet">Planeta:</label>
             <div>
@@ -118,7 +127,7 @@
                 <label for="uranus">Urano</label>
             </div>
 
-            <button type="submit">Calcular Peso</button>
+            <button class="botao" type="submit">Calcular Peso</button>
         </form>
 
         <div id="result"></div>
