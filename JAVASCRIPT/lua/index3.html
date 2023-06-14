@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio</title>
+</head>
+
+<body>
+    <script>
+        var numero = parseInt(prompt("Digite um número maior que 0:"));
+        var soma = 0;
+
+        if (numero > 0) {
+            for (var i = 1; i < numero; i++) {
+                soma += i;
+            }
+
+            alert("A soma de todos os números menores que " + numero + " é: " + soma);
+        } else {
+            alert("O número digitado não é válido. Por favor, digite um número maior que 0.");
+        }
+
+    </script>
+</body>
+
+</html>
